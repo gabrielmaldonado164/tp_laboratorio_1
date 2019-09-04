@@ -12,6 +12,7 @@ int main()
     float multiplicacion;
     int factorialUno;
     int factorialDos;
+    int resultadosOperaciones = 0;
 
     while(!(menu==5)){
         system("cls");
@@ -32,7 +33,7 @@ int main()
                 scanf("%f",& numeroUno);
                 break;
         case 2:
-                printf("Ingrese el segundo numero");
+                printf("Ingrese el segundo numero: ");
                 scanf("%f",& numeroDos);
                 break;
         case 3:
@@ -42,15 +43,19 @@ int main()
                 dividir = division(numeroUno,numeroDos);
                 factorialUno = factorial(numeroUno);
                 factorialDos = factorial(numeroDos);
+                resultadosOperaciones =1;
                 break;
         case 4:
+            if(resultadosOperaciones == 1)
+                {
                 printf("El resultado de A+B es:%0.2f\n ",suma);
                 printf("El resultado de A-B es:%0.2f\n ",resta);
                 printf("El resultado de A*B es:%0.2f\n ",multiplicacion);
 
+
                 if(numeroDos ==0)
                     {
-                        printf("Operacion no valida,no se puede dividir por 0");
+                        printf("\nOperacion no valida,no se puede dividir por 0\n");
                     }
                 else
                 {
@@ -58,20 +63,28 @@ int main()
 
                 }
 
-                if(numeroUno>=1 && numeroDos>=1)
+                if(numeroUno>=0 && numeroDos>=0)
                     {
-                        printf("El factorial del numero A es: %d",factorialUno);
-                        printf("El factorial del numero B es: %d",factorialDos);
+                        printf("El factorial del numero A es: %d\n",factorialUno);
+                        printf("El factorial del numero B es: %d\n",factorialDos);
 
                     }
                 else
                     {
-                        printf("\nNo se pudo calcular el factorial,por favor ingrese un numero positivo entero\n");
+                        printf("\nNo se pudo calcular el factorial, por favor ingrese un numero positivo entero\n");
                     }
+                }else
+                {
+                    printf("Primero tiene que ingresar datos para mostrar");
+                }
+
+                break;
+        case 5:
+                printf("\nHasta luego\n");
                 break;
 
         default:
-            printf("\nIngrese una opcion valida\n");
+            printf("\nIngrese una opcion valida\a\n");
             break;
 
         }
