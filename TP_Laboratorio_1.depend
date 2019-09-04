@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1567558384 source:c:\users\gabri\desktop\tp laboratorio\tp calculadora\calculos.c
+	"calculos.h"
+
+1567561901 source:c:\users\gabri\desktop\tp laboratorio\tp calculadora\main.c
+	<stdlib.h>
+	"calculos.h"
+
+1567555934 c:\users\gabri\desktop\tp laboratorio\tp calculadora\calculos.h
+	<stdio.h>
+
+1567558384 source:c:\users\gabri\desktop\tp\tp_laboratorio_1\calculos.c
+	"calculos.h"
+
+1567555934 c:\users\gabri\desktop\tp\tp_laboratorio_1\calculos.h
+	<stdio.h>
+
+1567561901 source:c:\users\gabri\desktop\tp\tp_laboratorio_1\main.c
+	<stdlib.h>
+	"calculos.h"
+
