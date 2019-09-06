@@ -75,7 +75,7 @@ int main()
                     }
                 }else
                 {
-                    printf("Primero tiene que ingresar datos para mostrar");
+                    printf("Primero tiene que ingresar datos para mostrar\n");
                 }
 
                 break;
