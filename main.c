@@ -72,6 +72,7 @@ int main()
                 else
                     {
                         printf("\nNo se pudo calcular el factorial, por favor ingrese un numero positivo entero\n");
+
                     }
                 }else
                 {
